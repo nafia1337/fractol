@@ -1,3 +1,6 @@
 [submodule "minilibx-linux"]
 	path = minilibx-linux
 	url = https://github.com/42paris/minilibx-linux/
+[submodule "minilibx_linux"]
+	path = minilibx_linux
+	url = https://github.com/42paris/minilibx-linux/

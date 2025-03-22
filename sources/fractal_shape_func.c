@@ -1,5 +1,6 @@
 #include "fractal_shape_func.h"
-
+#include "utils.h"
+/*
 double  *linespace(double xmin, double xmax, int width)
 {
         double	*x;
@@ -21,9 +22,10 @@ double  *linespace(double xmin, double xmax, int width)
         }
         return (x);
 }
+*/
 
-
-void *render_shape(t_vars *vars)
+//void *render_shape(t_vars *vars)
+void render_shape(t_vars *vars)
 {
 
         cp_num c;
@@ -100,6 +102,7 @@ unsigned int mandelbrot_calc(cp_num c, int max_iter)
         return (max_iter);
 }
 
+/*
 double  convertToFloat(char *str_float)
 {
 	int	i;
@@ -143,11 +146,11 @@ double  convertToFloat(char *str_float)
 	return (res * sign);
 
 }
+*/
 
 unsigned int	julia_calc(cp_num z, int max_iter, t_vars *vars)
 {
         cp_num  z_0;
-        //cp_num  c = {-0.8f, 0.156f};
         cp_num  c = {vars->param_x, vars->param_y};
         int     n;
         double  magnitude;
@@ -170,7 +173,7 @@ unsigned int	julia_calc(cp_num z, int max_iter, t_vars *vars)
         return (max_iter); // intensity
 }
 
-
+/*
 int	isdigit_str(char * str)
 {
 	int	i;
@@ -200,3 +203,4 @@ int	isdigit_str(char * str)
 	}
 	return (is_float);
 }
+*/
